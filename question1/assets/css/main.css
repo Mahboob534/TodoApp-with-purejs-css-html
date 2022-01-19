@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    background-image:url(/assets/img/bg-desktop-light.jpg);
+    background-repeat: no-repeat;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.5rem;
+}
+.ToDo{
+    
+    font-size:4rem;
+    color:white;
+    margin:3% 15%;  
+}
+.addItem{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.addBtn{
+  color: white ;
+  text-align: center;
+  width:30px;
+  height:30px;
+  position: absolute;
+  left:21%;
+  border :1px solid whitesmoke;
+  border-radius:50% ;
+  cursor: pointer;
+}
+.inputText{
+   flex-basis:60%;
+   height:5vh ;
+   border-radius:4px;   
+   margin: auto;
+   padding-left:5% ;
+   
+ 
+}
+ul{
+  width:63%;
+  margin:0 17%;
+ }
+
+li {
+  cursor:pointer;
+  position:relative;
+  padding: 1% 4%;
+  list-style-type:none;
+  background: white;
+  transition:0.2s;  
+  user-select:none;
+  border :1px solid whitesmoke ;
+  border-radius:4px;
+}
+ul li.checked {
+  text-decoration:line-through;
+  color:whitesmoke;
+ 
+}
+  
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color:black;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 10px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 15px;
+  color:white; 
+}
+ 
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;       
+}
+.addBtn:hover{
+ color:cornflowerblue
+}
+footer{
+  display: flex;
+ width: 60% ;
+  height: 5vh;
+  font-size:1rem;
+  width:60%;
+  margin:auto;
+  border :1px solid whitesmoke;
+  border-radius:4px;
+  justify-content: space-around;
+}
+.filter{
+  display: flex;
+  flex-basis:40%;
+ justify-content: space-around;
+}
+.filter a{
+  padding-left:2% ;
+  text-decoration: none;
+  align-self: center;
+}
+ footer a{
+   text-decoration: none;
+   align-self: center;
+
+ }
+.statusLbl{
+  color:rgb(206, 202, 202);
+  margin-right:7%;
+  align-self: center;
+}

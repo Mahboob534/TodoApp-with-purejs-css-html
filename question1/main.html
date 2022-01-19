@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ToDO</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+    <header class="ToDo">
+        TODO
+    </header>
+    <div class="addItem">
+        <span onclick="newElement()" class="addBtn">+</span>
+        <input class="inputText" type="text" name="listItem" placeholder="add List" id="myInput">
+
+   </div>
+   <div class="list">
+        <ul id="myUL">
+            <li class="checked">reading</li>
+            <li>doing sth</li>
+            <li>doing sth</li>
+            <li>doing sth</li>
+        </ul>
+
+    </div>
+    <footer >
+        <label class="statusLbl" for="item">5item left</label>
+        <div class="filter"><a href="#" >All</a>
+            <a href="#" >Active</a>
+            <a href="#">Complete</a></div>
+        <a href="#">Clear Complete</a>
+        
+
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
