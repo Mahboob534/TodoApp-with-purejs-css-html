@@ -45,6 +45,9 @@ body{
 ul{
   width:63%;
   margin:0 17%;
+  display: flex;
+flex-direction: column ;
+
  }
 
 li {
@@ -82,8 +85,10 @@ ul li.checked::before {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 12px 16px 12px 16px;       
+    padding: 12px 16px 12px 16px;   
+     
 }
+
 .addBtn:hover{
  color:cornflowerblue
 }
@@ -114,7 +119,66 @@ footer{
 
  }
 .statusLbl{
-  color:rgb(206, 202, 202);
-  margin-right:7%;
+  color:#cececa;
+  margin-right:2%;
   align-self: center;
 }
+@media (max-width:768px) {
+    ul{
+      width:65%;
+      margin:0 15%;
+    }
+  
+} 
+
+
+@media (max-width:576px) {
+  body{
+    font-size: 1rem;
+  }
+  .addBtn{
+    color: white ;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    left:6%
+  }
+  .inputText{
+     flex-basis:90%;
+     height:5vh ;
+     border-radius:4px;   
+     padding-left:12% ;
+    }
+  
+  .header {
+    background-image:url(/assets/img/bg-mobile-light.jpg);
+    flex-direction: column;
+    justify-content: center;  
+  } 
+  ul{
+      width: 95%; 
+      margin:0;
+  }
+  li {
+    width: 100%;
+    height: 5vh;
+  
+  }
+  ul li.checked::before {
+    border-width: 0 1px 1px 0;
+    top:7px;
+    left: 7px;
+    height: 8px;
+    width: 8px;
+  }
+  .close {
+    padding: 5px 5px 8px 12px;     
+}
+  footer{
+    width:100%;
+    font-size:0.5rem;
+    margin: 1%;
+    padding:0
+  }
+
+} 

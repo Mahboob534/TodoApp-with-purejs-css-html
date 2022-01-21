@@ -18,21 +18,18 @@
         <input class="inputText" type="text" name="listItem" placeholder="add List" id="myInput">
 
    </div>
-   <div class="list">
+   <div >
         <ul id="myUL">
-            <li class="checked">reading</li>
-            <li>doing sth</li>
-            <li>doing sth</li>
-            <li>doing sth</li>
+           
         </ul>
 
     </div>
     <footer >
-        <label class="statusLbl" for="item">5item left</label>
-        <div class="filter"><a href="#" >All</a>
-            <a href="#" >Active</a>
-            <a href="#">Complete</a></div>
-        <a href="#">Clear Complete</a>
+        <span class="statusLbl"><label id="leftLbl" for="item"></label>item left</span>
+        <div class="filter"><a href="#"onclick="showAll()" >All</a>
+            <a href="#"onclick="showActive()" >Active</a>
+            <a href="#" onclick="showCompelete()">Complete</a></div>
+        <a href="#" onclick="clearCompelete()">Clear Complete</a>
         
 
     </footer>
